@@ -18,17 +18,6 @@ export function OnboardingSection() {
     },
     {
       number: 2,
-      title: "Générez le schéma Prisma",
-      description: (
-        <>
-          Lancez{' '}
-          <span className="font-mono bg-gray-100 dark:bg-gray-800 px-2 py-1 rounded">npx prisma generate</span>
-          {' '}pour initialiser le schéma Prisma.
-        </>
-      )
-    },
-    {
-      number: 3,
       title: "Démarrez le projet",
       description: (
         <>
