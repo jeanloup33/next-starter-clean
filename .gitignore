@@ -43,3 +43,6 @@ next-env.d.ts
 /generated/prisma
 
 /src/generated/prisma
+
+node_modules
+.env
