@@ -1,28 +1,36 @@
-/**
- * Page d'accueil du Starter Kit
- * 
- * Cette page présente les fonctionnalités principales du starter kit
- * avec une interface moderne et responsive.
- */
+import React from 'react';
+import Header from '../src/components/header';
+import Hero from '../src/components/Hero';
+import About from '../src/components/About';
+import Services from '../src/components/Services';
+import AvisClients from '../src/components/AvisClients';
+import Contact from '../src/components/Contact';
+import Footer from '../src/components/Footer';
+import ScrollToTop from '../src/components/ScrollToTop';
 
-import { Header } from "@/src/components/landing/Header";
-import { OnboardingSection } from "@/src/components/landing/OnboardingSection";
-import { FeaturesSection } from "@/src/components/landing/FeaturesSection";
-import { ReadyToUseSection } from "@/src/components/landing/ReadyToUseSection";
-import { Footer } from "@/src/components/landing/Footer";
-
-/**
- * Composant principal de la page d'accueil
- * Assemble tous les composants dans une mise en page responsive
- */
-export default function Home() {
+export default function HomePage() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-purple-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900">
+    <div className="min-h-screen bg-white">
       <Header />
-      <OnboardingSection />
-      <FeaturesSection />
-      <ReadyToUseSection />
-      <Footer />
+      <main>
+        <section id="home">
+          <Hero />
+        </section>
+        <section id="about">
+          <About />
+        </section>
+        <section id="services">
+          <Services />
+        </section>
+        <section id="avis">
+          <AvisClients />
+        </section>
+        <section id="contact">
+          <Contact />
+        </section>
+        <Footer />
+      </main>
+      <ScrollToTop />
     </div>
   );
 }
